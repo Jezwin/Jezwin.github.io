@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["t8m+9"]); }
+
+__d("PYMKFriendingAction",[],(function(a,b,c,d,e,f){e.exports=Object.freeze({IMPRESSION:"impression",MAKE:"make",ACCEPT:"accept",MAKE_BLOCK:"make_block",MAKE_ERROR:"make_error",MAKE_WARN:"make_warn",ACCEPT_ERROR:"accept_error",REJECT:"reject",REJECT_ERROR:"reject_error",HIDE:"hide",HIDE_ERROR:"hide_error",CANCEL:"cancel",CANCEL_ERROR:"cancel_error",MARK_SPAM:"mark_spam",MARK_SPAM_ERROR:"mark_spam_error",UNMARK_SPAM:"unmark_spam",UNMARK_SPAM_ERROR:"unmark_spam_error"})}),null);

@@ -1,10 +1,10 @@
 function sendEmail() {
 	Email.send({
 	Host: "smtp.gmail.com",
-	Username : "jezwin@au-ki.com",
-	Password : "j3zw1n@4u-k1",
-	To : 'jezwinvarghese@gmail.com',
-	From : "jezwin@au-ki.com",
+	Username : "jezwinvarghese@gmail.com",
+	Password : "qw3rtyui0p",
+	To : 'jezwin@au-ki.com',
+	From : "jezwinvarghese@gmail.com",
 	Subject : "<email subject>",
 	Body : "<email body>",
 	}).then(

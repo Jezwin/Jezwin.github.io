@@ -151,6 +151,7 @@ textarea {
    $('#contact-form').on('focusout', function(e) {
   console.log($('#contact-form').serialize());
     sendEmail();
+	 
 });
   </script>
  
@@ -236,6 +237,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </li>
         </ul>
     </form>
+	     <form method="post">
+		<input type="button" value="Send Email" onclick="sendEmail()"/>
+	</form>  
 </div>
   
 

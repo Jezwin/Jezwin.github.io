@@ -144,13 +144,12 @@ textarea {
 }
    
   </style>
-   <script src="https://smtpjs.com/v3/smtp.js"></script>
-	<script src="index.js"></script>
+ 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script>
    $('#contact-form').on('focusout', function(e) {
-  console.log($('#contact-form').serialize());
-    sendEmail();
+  alert($('#contact-form').serialize());
+
 	 
 });
   </script>
@@ -236,10 +235,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <input type="submit">
             </li>
         </ul>
-    </form>
-	     <form method="post">
-		<input type="button" value="Send Email" onclick="sendEmail()"/>
-	</form>  
+   
 </div>
   
 

@@ -20,8 +20,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 	
 <script>
+	var randomNumber = Math.floor(Math.random() * 10);
 	window.testGroup="beta1";
-	var userGroup ="beta1";
+	var userGroup;
+	if(randomNumber < 5){
+	userGroup ="beta1";
+	} else {
+	userGroup ="beta2";
+	}
 	var digitalData = {
     pageInstanceID: "Example page - production",
     page: {

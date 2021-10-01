@@ -5,9 +5,13 @@
 	
 <script>
 	var randomNumber = Math.floor(Math.random() * 10);
-	window.testGroup="beta1";
-	
-	var userGroup ="beta1";
+	var userGroup;
+	if(randomNumber<5){
+	userGroup ="beta1";
+	} else {
+	userGroup ="beta2";
+	}
+	console.log(userGroup)
 	
 
 	var digitalData = {

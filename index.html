@@ -6,7 +6,13 @@
 <script>
 	var randomNumber = Math.floor(Math.random() * 10);
 	
-	var userGroup ="beta1";
+	var userGroup;
+	if(randomNumber<5){
+	 userGroup ="beta1";
+	}else{
+	userGroup ="beta2";
+	}
+	console.log(userGroup)
 	
 	
 

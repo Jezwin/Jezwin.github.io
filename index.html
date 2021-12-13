@@ -1,18 +1,7 @@
 <!DOCTYPE html>
  <head>
 <meta name="google-site-verification" content="gZo46IhmKBghqELtYBIPs-7I_xUeGKJcbuEbbnZT3PM" />
-<script type="text/javascript">
-	targetPageParamsAll = function() { 
 
-		 var userGroups = "everyone,beta1,hello2,hello1";
-		 var userGroups = userGroups.split(",");
-
-		 return { userGroups1: JSON.stringify(userGroups) };
-		return { 
-		    "userGroups2": userGroups
-		  }
-	}; 
-</script>
 	
 <script>
 	var randomNumber = Math.floor(Math.random() * 10);
@@ -59,9 +48,19 @@
         }
     }
 	}
+	targetPageParamsAll = function() { 
+
+		 var userGroups = "everyone,hello2,hello1,"+userGroup;
+		 var userGroups = userGroups.split(",");
+
+		 return { userGroups1: JSON.stringify(userGroups) };
+		return { 
+		    "userGroups2": userGroups
+		  }
+	}; 
 	
 </script>
-	
+	 
 
 	 
 <script>

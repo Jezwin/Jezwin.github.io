@@ -23,50 +23,48 @@
 	}
 	console.log(userGroup)
 	
-	window.targetGlobalSettings = {
+// 	window.targetGlobalSettings = {
 
-  cookieDomain: "jezwin.github.io"
+//   cookieDomain: "jezwin.github.io"
 
-};
+// };
 	
 
-	var digitalData = {
-    pageInstanceID: "Example page - production",
-    page: {
-        pageInfo: {
-            pageID: "5093",
-            pageName: "Example page",
-            destinationURL: "https://example.com/index.html",
-            referringURL: "https://example.com/referrer.html",
-            sysEnv: "desktop",
-            variant: "2",
-            version: "1.14",
-            breadCrumbs: ["Home","Example group","Example page"],
-            author: "J Smith",
-            issueDate: "Example date",
-            effectiveDate: "Example date",
-            expiryData: "Example date",
-            language: "en-US",
-            geoRegion: "US",
-            industryCodes: "Example industry codes",
-            publisher: "Example publisher"
-        },
-        category: {
-            primaryCategory: "Example page category",
-            subCategory: "Sub-category example"
-        },
-        attributes: {
-            country: "US",
-            language: "en-US"
-        }
-    }
-	}
+	// var digitalData = {
+ //    pageInstanceID: "Example page - production",
+ //    page: {
+ //        pageInfo: {
+ //            pageID: "5093",
+ //            pageName: "Example page",
+ //            destinationURL: "https://example.com/index.html",
+ //            referringURL: "https://example.com/referrer.html",
+ //            sysEnv: "desktop",
+ //            variant: "2",
+ //            version: "1.14",
+ //            breadCrumbs: ["Home","Example group","Example page"],
+ //            author: "J Smith",
+ //            issueDate: "Example date",
+ //            effectiveDate: "Example date",
+ //            expiryData: "Example date",
+ //            language: "en-US",
+ //            geoRegion: "US",
+ //            industryCodes: "Example industry codes",
+ //            publisher: "Example publisher"
+ //        },
+ //        category: {
+ //            primaryCategory: "Example page category",
+ //            subCategory: "Sub-category example"
+ //        },
+ //        attributes: {
+ //            country: "US",
+ //            language: "en-US"
+ //        }
+ //    }
+	// }
 var userGroups = "everyone,cir2-activeuser-supergroup,cir2-wpclicaccess-supergroup,cir2-obaptaaccess-supergroup,cir2-unlicensed-associates,cir2-access-cirstatements,cir2-target-invent-accountopen,"+userGroup;
 
 	targetPageParamsAll = function() { 
-
-		 // var userGroups3 = userGroups.split(",");
-		console.log(JSON.stringify(userGroups));
+		 // var userGroups3 = userGroups.split(",");		
 		 return { userGroups1: JSON.stringify(userGroups) };
 		// return { 
 		  //   "userGroups2": userGroups3

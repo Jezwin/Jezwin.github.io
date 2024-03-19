@@ -65,12 +65,12 @@ var userGroups = "everyone,cir2-activeuser-supergroup,cir2-wpclicaccess-supergro
 
 	targetPageParamsAll = function() { 
 
-		 var userGroups3 = userGroups.split(",");
-
+		 // var userGroups3 = userGroups.split(",");
+		console.log(JSON.stringify(userGroups));
 		 return { userGroups1: JSON.stringify(userGroups) };
-		return { 
-		    "userGroups2": userGroups3
-		  }
+		// return { 
+		  //   "userGroups2": userGroups3
+		  // }
 	}; 
 	
 </script>

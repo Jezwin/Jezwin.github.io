@@ -1,38 +1,16 @@
 <!DOCTYPE html>
  <head>
-	 
-<script>
-    //prehiding snippet for Adobe Target with asynchronous Launch deployment
-    (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
-</script>
 
-	 
-<!-- Adobe Launch Code -->	 
-<script src="https://assets.adobedtm.com/35066b6d6803/291222b5e406/launch-3d3888a68bbf-development.min.js" async></script>
-<!-- End Adobe Launch Code -->
-	 
-<meta name="google-site-verification" content="gZo46IhmKBghqELtYBIPs-7I_xUeGKJcbuEbbnZT3PM" />
-
-<!-- PushAlert -->
-<script type="text/javascript">
-        (function(d, t) {
-                var g = d.createElement(t),
-                s = d.getElementsByTagName(t)[0];
-                g.src = "https://cdn.pushalert.co/integrate_a670f72127af93f78337206595f46973.js";
-                s.parentNode.insertBefore(g, s);
-        }(document, "script"));
-</script>
-<!-- End PushAlert -->
-<script>
+	 <script>
 	var randomNumber = Math.floor(Math.random() * 10);
 	
-	var userGroups1;
+	var userGroup;
 	if(randomNumber<5){
-	 userGroups1 ="beta1";
+	 userGroup ="beta1";
 	}else{
-	userGroups1 ="beta2";
+	userGroup ="beta2";
 	}
-	console.log(userGroups1)
+	console.log(userGroup)
 	
 	window.targetGlobalSettings = {
 
@@ -72,12 +50,43 @@
  //        }
  //    }
 	// }
- //        var userGroups = "everyone,cir2-activeuser-supergroup,cir2-wpclicaccess-supergroup,cir2-obaptaaccess-supergroup,cir2-unlicensed-associates,cir2-access-cirstatements,cir2-target-invent-accountopen,"+userGroup;
-	
-	// targetPageParamsAll = function() { 
-	// 	 return { userGroups1:userGroups };
-	// }; 	
-</script>	 	 
+  
+
+
+</script>
+	 
+<script>
+    //prehiding snippet for Adobe Target with asynchronous Launch deployment
+    (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
+</script>
+
+	 targetPageParamsAll = function() { 
+
+		 var userGroups = "everyone,"+userGroup;
+		 
+		  return { 
+		    "userGroups1": userGroup
+		  }
+	}; 	
+
+	 
+<!-- Adobe Launch Code -->	 
+<script src="https://assets.adobedtm.com/35066b6d6803/291222b5e406/launch-3d3888a68bbf-development.min.js" async></script>
+<!-- End Adobe Launch Code -->
+	 
+<meta name="google-site-verification" content="gZo46IhmKBghqELtYBIPs-7I_xUeGKJcbuEbbnZT3PM" />
+
+<!-- PushAlert -->
+<script type="text/javascript">
+        (function(d, t) {
+                var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+                g.src = "https://cdn.pushalert.co/integrate_a670f72127af93f78337206595f46973.js";
+                s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+</script>
+<!-- End PushAlert -->
+	 	 
   <style>
    @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);

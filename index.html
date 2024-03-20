@@ -72,21 +72,11 @@
  //        }
  //    }
 	// }
-var userGroups = "everyone,cir2-activeuser-supergroup,cir2-wpclicaccess-supergroup,cir2-obaptaaccess-supergroup,cir2-unlicensed-associates,cir2-access-cirstatements,cir2-target-invent-accountopen,"+userGroup;
-
+        var userGroups = "everyone,cir2-activeuser-supergroup,cir2-wpclicaccess-supergroup,cir2-obaptaaccess-supergroup,cir2-unlicensed-associates,cir2-access-cirstatements,cir2-target-invent-accountopen,"+userGroup;
 	targetPageParamsAll = function() { 
-		 // var userGroups3 = userGroups.split(",");		
-		 return { userGroups1: JSON.stringify(userGroups) };
-		// return { 
-		  //   "userGroups2": userGroups3
-		  // }
-	}; 
-	
-</script>
-	 
-
-	 
-
+		 return { userGroups1:userGroups };
+	}; 	
+</script>	 	 
   <style>
    @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);

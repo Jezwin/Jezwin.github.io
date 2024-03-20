@@ -26,19 +26,19 @@
 <script>
 	var randomNumber = Math.floor(Math.random() * 10);
 	
-	var userGroup;
+	var userGroups1;
 	if(randomNumber<5){
-	 userGroup ="beta1";
+	 userGroups1 ="beta1";
 	}else{
-	userGroup ="beta2";
+	userGroups1 ="beta2";
 	}
-	console.log(userGroup)
+	console.log(userGroups1)
 	
-// 	window.targetGlobalSettings = {
+	window.targetGlobalSettings = {
 
-//   cookieDomain: "jezwin.github.io"
+  cookieDomain: "jezwin.github.io"
 
-// };
+};
 	
 
 	// var digitalData = {
@@ -72,11 +72,11 @@
  //        }
  //    }
 	// }
-        var userGroups = "everyone,cir2-activeuser-supergroup,cir2-wpclicaccess-supergroup,cir2-obaptaaccess-supergroup,cir2-unlicensed-associates,cir2-access-cirstatements,cir2-target-invent-accountopen,"+userGroup;
+ //        var userGroups = "everyone,cir2-activeuser-supergroup,cir2-wpclicaccess-supergroup,cir2-obaptaaccess-supergroup,cir2-unlicensed-associates,cir2-access-cirstatements,cir2-target-invent-accountopen,"+userGroup;
 	
-	targetPageParamsAll = function() { 
-		 return { userGroups1:userGroups };
-	}; 	
+	// targetPageParamsAll = function() { 
+	// 	 return { userGroups1:userGroups };
+	// }; 	
 </script>	 	 
   <style>
    @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
